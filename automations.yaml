@@ -23,7 +23,7 @@
     data:
       topic: bathroom/fan/mode
       payload: "on"
-  
+ 
 -
   alias: fanAuto
   trigger:
