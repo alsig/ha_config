@@ -77,7 +77,7 @@ present:
   entities:
     - device_tracker.bastianasiphone
     - device_tracker.iphone
-    - device_tracker.android4e61bb81579bf1cf
+    - device_tracker.samsung_galaxy_s5
 
 default_view:
   view: yes
