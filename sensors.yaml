@@ -1,0 +1,7 @@
+- platform: cpuspeed
+- platform: random
+  api_key: "f244293c729d5066cf27"
+- platform: yr
+- platform: mqtt
+  state_topic: "bathroom/fan/button"
+  name: "button"

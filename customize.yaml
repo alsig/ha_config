@@ -1,0 +1,10 @@
+group.present:
+    order: 1
+group.downStairs:
+    order: 2
+group.upStairs:
+    order: 3
+group.outdoors:
+    order: 4
+group.testing:
+    order: 5
