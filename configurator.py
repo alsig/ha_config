@@ -35,7 +35,7 @@ BASEPATH = None
 SSL_CERTIFICATE = None
 SSL_KEY = None
 # Set the destination where the HASS API is reachable
-HASS_API = "http://192.168.1.100:8123/api/"
+HASS_API = "http://127.0.0.1:8123/api/"
 # If a password is required to access the API, set it in the form of "password"
 # if you have HA ignoring SSL locally this is not needed if on same machine.
 HASS_API_PASSWORD = None
