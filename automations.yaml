@@ -1,0 +1,94 @@
+-
+  alias: fanOff
+  trigger:
+    platform: mqtt
+    payload: released
+    topic: bathroom/fan/button
+  condition: []
+  action:
+    service: mqtt.publish
+    data:
+      topic: bathroom/fan/mode
+      payload: "off" 
+  
+-
+  alias: fanOn
+  trigger:
+    platform: mqtt
+    payload: pushed    
+    topic: bathroom/fan/button
+  condition: []
+  action:
+    service: mqtt.publish
+    data:
+      topic: bathroom/fan/mode
+      payload: "on"
+  
+-
+  alias: fanAuto
+  trigger:
+    platform: mqtt
+    payload: longPush    
+    topic: bathroom/fan/button
+  condition: []
+  action:
+    service: mqtt.publish
+    data:
+      topic: bathroom/fan/mode
+      payload: "auto"
+
+- alias: getUp
+  trigger:
+    platform: time
+    at: "05:30:00"
+  condition:
+    - condition: time
+      weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+  action:
+    service: light.turn_on
+    entity_id: light.bedroom3  
+    data:  
+      brightness: 127
+      transition: 300
+
+- alias: turnOnFrontDoorLightAtSunSet
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "+00:30:00"
+  action:
+    service: light.turn_on
+    entity_id: light.frontdoor 
+    data:  
+      brightness: 255
+
+- alias: turnOffFrontDoorLightAt22h00
+  trigger:
+    platform: time
+    at: "22:00:00"
+  action:
+    service: light.turn_off
+    entity_id: light.frontdoor 
+
+- alias: turnOnFrontDoorLightAt6h20
+  trigger:
+    platform: time
+    at: "06:20:00"
+  action:
+    service: light.turn_on
+    entity_id: light.frontdoor 
+    data:  
+      brightness: 255
+
+- alias: turnOffFrontDoorLightAt7h30
+  trigger:
+    platform: time
+    at: "07:30:00"
+  action:
+    service: light.turn_off
+    entity_id: light.frontdoor

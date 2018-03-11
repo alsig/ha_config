@@ -1,0 +1,12 @@
+- 
+  name: Romantic
+    entities:
+      light.porch:
+        state: on
+        rgb_color: [255, 0, 0]
+- 
+  name: Movies
+    entities:
+      light.porch:
+        state: on
+        rgb_color: [0, 255, 0]
