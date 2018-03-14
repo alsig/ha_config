@@ -92,3 +92,28 @@
   action:
     service: light.turn_off
     entity_id: light.frontdoor
+
+- alias: 'NotifyWhenMQTTDevicesChangesState'
+  trigger:
+    platform: state
+    entity_id: device_tracker.kitchenLight
+  action:
+    - service: notify.pushbullet
+      data_template:
+        title: MQTT device state changed
+        message: >
+          {{ trigger.to_state.attributes.friendly_name }} is {{trigger.to_state.state}}.
+        target: 'device/iPhone'  
+  
+- alias: 'NotifyWhenHouseStatusChanges'
+  trigger:
+    platform: state
+    entity_id: device_tracker.samsung_galaxy_s5, device_tracker.iphone
+    
+  action:
+    - service: notify.pushbullet
+      data_template:
+        title: House status changed
+        message: >
+          {{ trigger.to_state.attributes.friendly_name }} is {% if trigger.to_state.state == 'home' %}back{% else %}away{% endif %}.
+        target: 'device/iPhone'    

@@ -1,0 +1,3 @@
+platform: mqtt
+  devices:
+    kitchenLight: 'tele/kitchenLight/LWT'

@@ -77,11 +77,11 @@ notify:
     api_key: !secret pushbullet_api_key
 
 
-device_tracker:
-  - platform: bluetooth_tracker
+device_tracker: !include_dir_list deviceTracker/
+  
 
-
-
+#!include_dir_merge_named deviceTracker/
+  
 light:
   - platform: mqtt_json
     name: "Porch Strip"

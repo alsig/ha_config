@@ -8,5 +8,10 @@ group.outdoors:
     order: 4
 group.scenes:
     order: 5
+group.automations:
+    order: 6
 group.testing:
-    order: 5
+    order: 7
+
+group.all_automations:
+  hidden: false
