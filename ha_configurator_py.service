@@ -1,0 +1,14 @@
+[Unit]
+Description=HASS-Configurator
+After=network.target
+
+[Service]
+Type=simple
+User=homeassistant
+#Set the path to your configurator.py location
+WorkingDirectory=/home/homeassistant/.homeassistant/
+ExecStart=/usr/bin/python3 /home/homeassistant/.homeassistant/configurator.py settings.conf
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
