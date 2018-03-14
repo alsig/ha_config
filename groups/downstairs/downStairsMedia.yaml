@@ -1,0 +1,6 @@
+downstairsMedia:
+  name: Downstairs Media
+  view: no
+  entities:
+    - media_player.stue_cast
+    - media_player.samsung_m7_spkwam750

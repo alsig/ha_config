@@ -1,0 +1,6 @@
+upstairs:
+  name: Upstairs 
+  view: yes
+  entities:
+    - group.bedroomLights
+    - group.upstairsMedia

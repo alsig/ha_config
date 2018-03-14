@@ -1,0 +1,6 @@
+livingRoomLights:
+  name: Living Room Light 
+  view: no
+  entities:
+    - light.readinglight
+    - light.livingroomlight

@@ -1,0 +1,7 @@
+downstairs:
+  name: Downstairs
+  view: yes
+  entities:
+    - group.downstairsMedia
+    - group.livingRoomLights
+    - group.kitchenLights

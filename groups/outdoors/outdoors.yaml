@@ -1,0 +1,5 @@
+outdoors:
+  name: outdoors
+  view: yes
+  entities:
+    - group.outDoorFront

@@ -1,10 +1,10 @@
-*
-!configurator.py
-!README.md
-!*.yaml
-!scenes
-!.gitignore
+tts/
+deps/
+home-assistant.*
 secrets.yaml
 known_devices.yaml
 travis_secrets.yaml
+.*
+*.db
+*.json
 

@@ -1,0 +1,7 @@
+scenes:
+  name: Scenes
+  view: yes
+  entities:
+    - scene.eating
+    - scene.romantic
+    - scene.movie

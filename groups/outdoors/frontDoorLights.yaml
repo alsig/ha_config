@@ -1,0 +1,5 @@
+outDoorFront:
+  name: outdoorFront
+  view: no
+  entities:
+    - light.frontdoor

@@ -61,10 +61,10 @@ mqtt:
   broker: 192.168.1.100
   client_id: "home_assistant"
 
-group: !include groups.yaml
+group: !include_dir_merge_named  groups/
 automation: !include automations.yaml
 script: !include scripts.yaml
-
+scene: !include_dir_list scenes/
 sensor: !include sensors.yaml
  
 duckdns:
@@ -78,23 +78,9 @@ notify:
 
 
 device_tracker:
-#  - platform: netgear
-#    host: !secret device_tracker_host
-#    username: !secret device_tracker_user
-#    password: !secret device_tracker_password
-#    track_new_devices: no
   - platform: bluetooth_tracker
-scene: 
-  - name: Romantic
-    entities:
-      light.porch_strip:
-        state: on
-        rgb_color: [255, 0, 0]
-  - name: Movies
-    entities:
-      light.porch_strip:
-        state: on
-        rgb_color: [0, 255, 0]
+
+
 
 light:
   - platform: mqtt_json

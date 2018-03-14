@@ -1,0 +1,8 @@
+bedroomLights:
+  name: Bedroom Lights
+  view: no
+  entities:
+    - light.bedroom
+    - light.bedroom1
+    - light.bedroom2
+    - light.bedroom3

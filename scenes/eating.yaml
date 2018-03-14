@@ -1,0 +1,6 @@
+name: Eating
+entities:
+  light.kitchenlight: off
+  light.readinglight: off
+  light.livingroom: off
+  light.dinnerlight: on

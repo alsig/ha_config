@@ -1,0 +1,7 @@
+present:
+  name: present
+  view: yes
+  entities:
+    - device_tracker.bastianasiphone
+    - device_tracker.iphone
+    - device_tracker.samsung_galaxy_s5

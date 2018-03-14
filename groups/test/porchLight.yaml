@@ -1,0 +1,5 @@
+testing:
+  name: testing
+  view: yes
+  entities:
+    - light.porch_strip

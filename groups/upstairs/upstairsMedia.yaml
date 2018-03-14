@@ -1,0 +1,6 @@
+upstairsMedia:
+  name: Upstairs Media
+  view: no
+  entities:
+    - media_player.sovevrelse_cast
+    - media_player.bastains_cast

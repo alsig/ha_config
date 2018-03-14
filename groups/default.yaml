@@ -1,0 +1,10 @@
+default_view:
+  view: yes
+  icon: mdi:home 
+  entities:
+    - group.upStairs
+    - group.downStairs
+    - group.outdoors
+    - group.testing
+    - group.present
+    - group.scenes
