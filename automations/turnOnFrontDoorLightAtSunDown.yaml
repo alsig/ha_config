@@ -1,0 +1,10 @@
+alias: 'Turn On FrontDoor Light At Sun Down'
+trigger:
+  platform: sun
+  event: sunset
+  offset: "+00:30:00"
+action:
+  service: light.turn_on
+  entity_id: light.frontdoor 
+  data:  
+    brightness: 255

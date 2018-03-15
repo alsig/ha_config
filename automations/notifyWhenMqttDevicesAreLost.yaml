@@ -1,0 +1,11 @@
+alias: 'Notify When MQTT Devices Changes State'
+trigger:
+  platform: state
+  entity_id: device_tracker.kitchenLight
+action:
+  - service: notify.pushbullet
+    data_template:
+      title: MQTT device state changed
+      message: >
+        {{ trigger.to_state.attributes.friendly_name }} is {{trigger.to_state.state}}.
+      target: 'device/iPhone' 
