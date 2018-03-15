@@ -9,4 +9,4 @@ HA service
 sudo systemctl xxx home-assistant@homeassistant.service
 replace xxx with start/stop/restart
 
-Testing git push
+sudo systemctl status home-assistant@homeassistant.service
