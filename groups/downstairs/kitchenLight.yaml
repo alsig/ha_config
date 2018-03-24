@@ -2,5 +2,5 @@ kitchenLights:
   name: Kitchen Lights
   view: no
   entities:
-    - light.dinnerLight
+    - light.dinnerTableLight
     - light.kitchenlight

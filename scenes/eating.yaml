@@ -3,4 +3,4 @@ entities:
   light.kitchenlight: off
   light.readinglight: off
   light.livingroomlight: off
-  light.dinnerlight: on
+  light.dinnertablelight: on
