@@ -78,11 +78,11 @@ notify:
     api_key: !secret pushbullet_api_key
 
 
-device_tracker: !include_dir_list deviceTracker/
-#  - platform: bluetooth_tracker
-#  - platform: mqtt
-#    devices:
-#      kitchenLight: 'tele/kitchenLight/LWT'
+device_tracker: #!include_dir_list deviceTracker/
+  - platform: bluetooth_tracker
+  - platform: mqtt
+    devices:
+      kitchenLight: 'tele/kitchenLight/LWT'
 
 #!include_dir_merge_named deviceTracker/
   
