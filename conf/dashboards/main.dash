@@ -1,0 +1,60 @@
+title: Main
+widget_dimensions: [292, 120]
+widget_size: [1, 1]
+widget_margins: [5, 5]
+columns: 8
+global_parameters:
+    use_comma: 0
+    precision: 1
+    use_hass_icon: 1
+    namespace: default
+    devices:
+      media_player:
+        step: 5
+
+clock:
+  time_format: "24hr"
+  widget_type: clock
+  date_format_country: dk
+weather:
+  widget_type: weather
+  units: "&deg;F"
+
+reload:
+  widget_type: reload
+
+bedroomLight:
+  widget_type: light
+  entity: light.bedroom
+  title: "Soveværelse lys"
+
+livingRoomLight:
+  widget_type: light
+  entity: light.livingroomlight
+  title: "Sofabord lys"
+
+kitchenLight:
+  widget_type: light
+  entity: light.kitchenlight
+  title: "Køkken lys"
+
+dinnerLight:
+  widget_type: light
+  entity: light.dinnertablelight
+  title: "Spisebord lys"
+
+readlingLight:
+  widget_type: light
+  entity: light.readinglight
+  title: "Lænestol lys"
+
+
+layout:
+  - clock(2x2)
+
+  -
+  - dinnerLight, kitchenLight
+  - readlingLight, livingRoomLight
+  - bedroomLight
+
+
