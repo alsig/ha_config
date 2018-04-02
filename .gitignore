@@ -8,4 +8,6 @@ travis_secrets.yaml
 *.db
 *.json
 entity_registry.yaml
-conf/compiled/**
+appdaemon/compiled
+appdaemon/apps/**
+appdaemon/appdaemon.yaml
